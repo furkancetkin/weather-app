@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Homework Application</title>
+  <link rel="stylesheet" href="stlye.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    referrerpolicy="no-referrer" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header--logo"><img src="assets/umbrella.png" alt="logo">
+      <div>
+        <h1>Weather</h1><span>Forecast</span></span>
+      </div>
+    </div>
+    <div class="header__searchField">
+      <div class="header__search">
+        <input type="text" class="header__searchInput" placeholder="Search...">
+        <button class="header__btnSearch">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+    </div>
+    <div class="header__avatar">
+      <img src="assets/avatar.svg" alt="profile" class="header__profileAvatar">
+    </div>
+  </header>
+  <main>
+    <div class="menu">
+      <div class="menu__activeMenu">
+        <div class="menu__activeChannel"></div>
+        <span class="menu__avatarIcon menu--fullOpacity"><i class="fas fa-cloud"></i></span>
+        <h2 class="menu--opacity">Weather</h2>
+      </div>
+      <div class="menu__activeMenu">
+        <div class="menu__notActiveChannel"></div><span class="menu__avatarIcon menu--halfOpacity"><i class="fas fa-id-card-alt"></i></span>
+        <h2 class="menu--halfOpacity">Subscribe</h2>
+      </div>
+    </div>
+
+    <div class="subscribe">
+      <div class="subscribe__content">
+        <div class="subscribe__left">
+          <h2>Subscribe</h2>
+          <div class="subscribe__line"><span class="subscribe__require">*</span><input type="text"
+              class="subscribe__field subName" placeholder="Name"></div>
+          <div class="subscribe__line"><span class="subscribe__require">*</span><input type="email"
+              class="subscribe__field subMail" placeholder="Email"></div>
+          <div class="subscribe__line"><span class="subscribe__require">*</span><input type="number"
+              class="subscribe__field subPhone" placeholder="Phone"></div>
+          <div class="subscribe__line"><span class="subscribe__require">*</span><textarea
+              class="subscribe__field subscribe--area subAddress" placeholder="Adress"></textarea></div>
+          <div class="subscribe__gender"><strong><span class="subscribe__require">*</span> Gender:</strong>
+            <div><input type="radio" name="gender" value="Male" checked="checked"><label for="">Male</label></div>
+            <div><input type="radio" name="gender" value="Female"><label for="">Female</label></div>
+          </div>
+          <div class="subscribe__date"><strong><span class="subscribe__require">*</span> Date of birth:</strong> <input
+              type="date" class="subBirth"></div>
+          <strong class="subscribe__preferences">Preferences:</strong>
+          <div class="subscribe__preference"><input type="checkbox"><label for="">I want invoice</label></div>
+          <div class="subscribe__preference"><input type="checkbox"><label for="">I want advertising and promotional
+              message</label></div>
+          <input type="button" class="subscribe__btn submitBtn" value="Submit">
+        </div>
+        <div class="subscribe__right">
+        </div>
+      </div>
+    </div>
+
+    <div class="modal">
+      <div class="modal__body">
+      </div>
+    </div>
+
+    <div class="weatherPage">
+      <div class="weatherPage__card weatherPage--card1"><img
+          src="https://storage-prtl-co.imgix.net/mp/a6e7a6e8.jpg?max-w=660&max-h=532&fit=crop&auto=format,compress&q=40"
+          alt="Istanbul" class="weatherPage__cityPhoto">
+        <div class="weatherPage__Info">
+          <div class="weatherPage__leftInfo">
+            <h2 class="weatherPage__nameOfCity">London</h2><span class="weatherPage__time">16.22 PM</span>
+            <p class="weatherPage__date">November 10.2020 | Wednesday</p>
+          </div>
+          <div class="weatherPage__rightInfo"><img src="http://openweathermap.org/img/wn/10d@2x.png" alt="icon"
+              class="weatherPage__icon">
+            <div class="weatherPage__weatherInfo"><span class="weatherPage__badge weatherPage__temp">22° C</span><span
+                class="weatherPage__badge weatherPage__humidity">61%</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="weatherPage__card weatherPage--card2"><img
+          src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+          alt="London" class="weatherPage__cityPhoto">
+        <div class="weatherPage__Info">
+          <div class="weatherPage__leftInfo">
+            <h2 class="weatherPage__nameOfCity">London</h2><span class="weatherPage__time">16.22 PM</span>
+            <p class="weatherPage__date">November 10.2020 | Wednesday</p>
+          </div>
+          <div class="weatherPage__rightInfo"><img src="http://openweathermap.org/img/wn/10d@2x.png" alt="icon"
+              class="weatherPage__icon">
+            <div class="weatherPage__weatherInfo"><span class="weatherPage__badge weatherPage__temp">22° C</span><span
+                class="weatherPage__badge weatherPage__humidity">61%</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="weatherPage__card weatherPage--card3"><img
+          src="https://images.unsplash.com/photo-1500313830540-7b6650a74fd0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+          alt="Paris" class="weatherPage__cityPhoto">
+        <div class="weatherPage__Info">
+          <div class="weatherPage__leftInfo">
+            <h2 class="weatherPage__nameOfCity">London</h2><span class="weatherPage__time">16.22 PM</span>
+            <p class="weatherPage__date">November 10.2020 | Wednesday</p>
+          </div>
+          <div class="weatherPage__rightInfo"><img src="http://openweathermap.org/img/wn/10d@2x.png" alt="icon"
+              class="weatherPage__icon">
+            <div class="weatherPage__weatherInfo"><span class="weatherPage__badge weatherPage__temp">22° C</span><span
+                class="weatherPage__badge weatherPage__humidity">61%</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="weatherPage__card weatherPage--card4"><img
+          src="https://images.unsplash.com/photo-1557160854-e1e89fdd3286?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+          alt="Washington" class="weatherPage__cityPhoto">
+        <div class="weatherPage__Info">
+          <div class="weatherPage__leftInfo">
+            <h2 class="weatherPage__nameOfCity">London</h2><span class="weatherPage__time">16.22 PM</span>
+            <p class="weatherPage__date">November 10.2020 | Wednesday</p>
+          </div>
+          <div class="weatherPage__rightInfo"><img src="http://openweathermap.org/img/wn/10d@2x.png" alt="icon"
+              class="weatherPage__icon">
+            <div class="weatherPage__weatherInfo"><span class="weatherPage__badge weatherPage__temp">22° C</span><span
+                class="weatherPage__badge weatherPage__humidity">61%</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="weatherPage__card weatherPage--card5"><img
+          src="https://images.unsplash.com/photo-1558117735-790d8562fe92?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+          alt="Berlin" class="weatherPage__cityPhoto">
+        <div class="weatherPage__Info">
+          <div class="weatherPage__leftInfo">
+            <h2 class="weatherPage__nameOfCity">London</h2><span class="weatherPage__time">16.22 PM</span>
+            <p class="weatherPage__date">November 10.2020 | Wednesday</p>
+          </div>
+          <div class="weatherPage__rightInfo"><img src="http://openweathermap.org/img/wn/10d@2x.png" alt="icon"
+              class="weatherPage__icon">
+            <div class="weatherPage__weatherInfo"><span class="weatherPage__badge weatherPage__temp">22° C</span><span
+                class="weatherPage__badge weatherPage__humidity">61%</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="weatherPage__card weatherPage--card6"><img
+          src="https://images.unsplash.com/photo-1564565946561-e738711bdbd1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80"
+          alt="Madrid" class="weatherPage__cityPhoto">
+        <div class="weatherPage__Info">
+          <div class="weatherPage__leftInfo">
+            <h2 class="weatherPage__nameOfCity">London</h2><span class="weatherPage__time">16.22 PM</span>
+            <p class="weatherPage__date">November 10.2020 | Wednesday</p>
+          </div>
+          <div class="weatherPage__rightInfo"><img src="http://openweathermap.org/img/wn/10d@2x.png" alt="icon"
+              class="weatherPage__icon">
+            <div class="weatherPage__weatherInfo"><span class="weatherPage__badge weatherPage__temp">22° C</span><span
+                class="weatherPage__badge weatherPage__humidity">61%</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+</body>
+
+</html>
